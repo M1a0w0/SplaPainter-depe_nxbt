@@ -2,7 +2,9 @@ import numpy as np
 from PIL import Image
 
 img = Image.open("./input.png")
-img = img.convert('L')
+img = img.convert('1')
+img = img.crop((0, 0, 320, 120))
+img.save("./result.png", "PNG")
 
 width, height = img.size
 result = "10s\nA 0.1s\n5s\n"
