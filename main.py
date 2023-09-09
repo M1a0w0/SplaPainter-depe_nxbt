@@ -7,7 +7,7 @@ img = img.crop((0, 0, 320, 120))
 img.save("./result.png", "PNG")
 
 width, height = img.size
-result = "10s\nA 0.1s\n5s\n"
+result = "10s\nA 0.1s\n3s\nL_STICK@-100-100 10s\n0.1s\nL 0.1s\nL0.1s\n"
 
 for i in range(height):
 	line = False
